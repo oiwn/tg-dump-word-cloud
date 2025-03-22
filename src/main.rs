@@ -102,8 +102,8 @@ fn main() -> Result<()> {
     save_word_counts_for_python(&words, &python_data_path)?;
 
     // Print top words being used for the cloud
-    println!("Top 30 words:");
-    for (i, (word, count)) in words.iter().take(30).enumerate() {
+    println!("Top 40 words:");
+    for (i, (word, count)) in words.iter().take(40).enumerate() {
         println!("{}. {} ({})", i + 1, word, count);
     }
 
